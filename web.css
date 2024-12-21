@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Container */
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 1rem;
+ 
+}
+
+/* Global Button */
+.btn {
+  background-color: #05aaff;
+  font-size: 20px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 500;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+ transform: translate(0, -1.5px);
+ box-shadow: 2px 2px 5px 0px rgb(83, 83, 83);
+}
+
+header {
+  background-color: #f7f8fc;
+  padding: 10px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navBar .navBar--left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+a {
+ text-decoration: none;
+ color: #fff;
+ 
+}
+
+.navBar--left menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+}
+
+menu li a {
+  color: #0d161a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navBar--right button {
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.navBar--right .toggleBar {
+  display: none;
+}
+
+/* Showcase */
+.showcase {
+  background-color: #0d161b;
+  padding: 45px 20px;
+  color: white;
+  text-align: center;
+}
+
+.showcase .content {
+  width: 100%;
+  max-width: 930px;
+  margin: auto;
+}
+
+.content h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.content .content--leading {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.75;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.content--form {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.content--form input {
+  height: 55px;
+  width: 253px;
+  padding: 12px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+}
+
+.content--form button {
+  height: 55px;
+}
+
+.showcase .content--form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.posts {
+  padding: 45px 20px;
+  background-color: #fff;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  
+}
+
+.post--item {
+  font-size: 35px;
+  color: #0d161a;
+  letter-spacing: 0em;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.post--item h2 {
+  font-size: 35px;
+}
+.post--item p {
+  color: #0d161b;
+  margin: 32px 0;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  text-transform: none;
+  box-sizing: border-box;
+  opacity: 0.6;
+}
+
+.post--item button {
+  padding: 12px 20px;
+}
+
+.paidCourses {
+  max-width: 970px;
+  padding: 45px 20px;
+  background-color: #fff;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+ }
+
+.paidCourses img {
+  flex: 1;
+}
+
+
+/* Coursse */
+
+
+
+/* #courses {
+  display: flex;
+  height: 340.31px;
+  width: 970px;
+  margin: 0px 43px;
+  padding: 45px 20px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);}
+
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.image-container {
+ position: relative;
+ display: flex;
+ margin-right: 20px;
+ margin-left: 0px;
+ padding-top: 56.25%;
+ height: 230px;
+ width: 465px;
+ object-fit: cover;
+}
+
+.image-container img {
+position: absolute;
+top: 150px;
+left: 0;
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+
+.text-container {
+  width: 465px;
+  height: 230px;
+  font-size: 20px;
+  margin: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.75;
+  font-weight: 300;
+  
+}
+.text-container h2 {
+  font-size: 35px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  
+}
+
+.text-container p {
+  font-size: 20px;
+  color: #0d161b;
+  text-align: justify;
+  margin-right: opx;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-left: 30px;
+  text-decoration: none;
+  text-transform: none;
+}
+.btn1 {
+  margin-left: 30px;
+  background-color: #00aaff;
+  font-size: 20px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 500;
+  border: 0;
+  margin-top: 30px;
+  outline: none;
+  border-radius: 5px;
+}
+ ::placeholder {
+  color: #e4e6ec;
+ }
+
+  #courses, #courses2 {
+    display: block;
+    width: 970px;
+    height: 340.31;
+    } 
+
+
+.courses1 {
+  display: block;
+  height: 340.31px;
+  width: 970px;
+  margin: 0px 43px;
+  padding: 45px 20px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);}
+
+  .courses2 {
+  display: block;
+  height: 340.31px;
+  width: 970px;
+  margin: 0px 43px;
+  padding: 45px 20px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);}
+
+  .courses3 {
+  display: block;
+  height: 340.31px;
+  width: 970px;
+  margin: 0px 43px;
+  padding: 45px 20px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);}
+
+  .courses4 {
+  display: block;
+  height: 340.31px;
+  width: 970px;
+  margin: 0px 43px;
+  padding: 45px 20px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);}
+
+  .P1 {
+    color: #05aaff;
+
+  } */
+
+  footer {
+    background-color: #f5f6f8;
+    margin-bottom: 1px;
+    font-size: 20px;
+    list-style: none;
+    justify-content: space-between;
+   }
+
+   footer menu li a {
+    color: rgb(143, 141, 138);
+    text-decoration: none;
+   }
+
+ 
+
+  
+@media (max-width: 768px) {
+  .navBar--left menu {
+    display: none;
+  }
+
+  .navBar--right button {
+    display: none;
+  }
+
+  .navBar--right .toggleBar {
+    display: block;
+  }
+  .inputControl {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .inputControl > div {
+    width: 100%;
+  }
+  .inputControl input {
+    width: 100%;
+  }
+  .inputControl .inputButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .inputControl .inputButton {
+    background-color: purple;
+  }
+
+  #showcase {
+    padding: 20px 0px;
+  }
+}
